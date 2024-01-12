@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Working Contact Form To Email using HTML CSS & Javascript</title>
+    <link rel="stylesheet" type="text/css" href="style-contact.css">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-rS/VbdBO+XeP3DL6QBXvblcOAfx5waqAW/ZKga9k7ePaaPlMwaZjxqRYocwNjk1c6g2eRQ3vbnR+DLlL/WtQ0w==" crossorigin="anonymous" />
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+	     <a id="backToHomeBtn" href="index.html" onclick="scrollToHome()">
+        <ion-icon name="home-outline"></ion-icon>
+        Home
+    </a>
+	 
+
+    <section class="contact">
+        <h2>Contact Me!</h2>
+
+        <form id="contactForm">
+            <div class="input-box">
+                <div class="input-field field">
+                    <input type="text" placeholder="FULL Name" id="fullName" class="item" autocomplete="off">
+                    <div class="error-txt">Full Name can't be blank</div>
+                </div>
+                <div class="input-field field">
+                    <input type="text" placeholder="Email Address" id="email" class="item" autocomplete="off">
+                    <div class="error-txt email">Email Address can't be blank</div>
+                </div>
+            </div>
+            <div class="input-box">
+                <div class="input-field field">
+                    <input type="text" placeholder="Phone Number" id="phone" class="item" autocomplete="off">
+                    <div class="error-txt">Phone Number can't be blank</div>
+                </div>
+                <div class="input-field field">
+                    <input type="text" placeholder="Subject" id="subject" class="item" autocomplete="off">
+                    <div class="error-txt">Subject can't be blank</div>
+                </div>
+            </div>
+
+            <div class="textarea-field field">
+                <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message" class="item" autocomplete="off"></textarea>
+                <div class="error-txt">Message can't be blank</div>
+            </div>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+
+     <!-- Ajoutez ceci dans la balise head de votre HTML -->
+      <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <script src="script-contact.js"></script>
+</body>
+
+</html>
